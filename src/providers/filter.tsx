@@ -37,8 +37,8 @@ const FilterProvider = ({ children }: FilterProviderProps) => {
     return uniqBy(
       filtersState.sort((a, b) => {
         const weight = {
-          [FilterType.Role]: 1,
-          [FilterType.Level]: 2,
+          [FilterType.Level]: 1,
+          [FilterType.Role]: 2,
           [FilterType.Language]: 3,
           [FilterType.Tool]: 4,
         };
