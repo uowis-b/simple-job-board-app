@@ -15,7 +15,9 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <>
       <Header />
-      <Container sx={styles.container}>{children}</Container>
+      <Container maxWidth={"desktop"} sx={styles.container}>
+        {children}
+      </Container>
     </>
   );
 };

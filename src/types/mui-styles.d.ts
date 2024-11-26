@@ -10,6 +10,7 @@ declare module "@mui/material/styles" {
     xl: false;
     // simplify breakpoints
     mobile: true;
+    tablet: true;
     desktop: true;
   }
 }

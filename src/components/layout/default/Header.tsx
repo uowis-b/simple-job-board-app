@@ -6,7 +6,7 @@ const styles: Styles = {
     backgroundColor: "hsl(180, 29%, 50%)",
     backgroundImage: {
       mobile: "url(/assets/images/bg-header-mobile.svg)",
-      desktop: "url(/assets/images/bg-header-desktop.svg)",
+      tablet: "url(/assets/images/bg-header-desktop.svg)",
     },
     backgroundSize: "cover",
     height: "156px",

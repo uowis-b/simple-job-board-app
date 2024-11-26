@@ -24,12 +24,12 @@ const styles: Styles = {
     borderRadius: "10px",
     padding: {
       mobile: "32px 24px 24px",
-      desktop: "24px",
+      tablet: "24px",
     },
     position: "relative",
     marginTop: {
       mobile: "25px",
-      desktop: 0,
+      tablet: 0,
     },
     "&:hover": {
       "&::before": {
@@ -48,19 +48,19 @@ const styles: Styles = {
   avatar: {
     width: {
       mobile: "50px",
-      desktop: "80px",
+      tablet: "80px",
     },
     height: {
       mobile: "50px",
-      desktop: "80px",
+      tablet: "80px",
     },
     position: {
       mobile: "absolute",
-      desktop: "relative",
+      tablet: "relative",
     },
     top: {
       mobile: "-25px",
-      desktop: 0,
+      tablet: 0,
     },
   },
   chip: {
@@ -81,7 +81,7 @@ const styles: Styles = {
   divider: {
     display: {
       mobile: "block",
-      desktop: "none",
+      tablet: "none",
     },
   },
 };
@@ -133,11 +133,11 @@ const JobCard = ({ post }: JobPostProps) => {
       sx={styles.root}
       direction={{
         mobile: "column",
-        desktop: "row",
+        tablet: "row",
       }}
       alignItems={{
         mobile: "flex-start",
-        desktop: "center",
+        tablet: "center",
       }}
       justifyContent={"space-between"}
       gap={"16px"}
@@ -201,6 +201,10 @@ const JobCard = ({ post }: JobPostProps) => {
         direction={"row"}
         alignItems={"center"}
         gap={"8px"}
+        justifyContent={{
+          mobile: "flex-start",
+          tablet: "flex-end",
+        }}
         flexWrap={"wrap"}
       >
         {filterBtns.map((filterItem) => (
