@@ -30,7 +30,7 @@ const JobList = ({ jobs }: JobListProps) => {
 
     return jobs.filter((job) => {
       const jobLanguages = job.languages.join(",").toLowerCase().split(",");
-      const jobTools = job.languages.join(",").toLowerCase().split(",");
+      const jobTools = job.tools.join(",").toLowerCase().split(",");
 
       const levelMatch = levelFilter.length
         ? levelFilter.some(
